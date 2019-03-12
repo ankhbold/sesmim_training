@@ -1,0 +1,13 @@
+[general]
+name= SES_Plugin
+description=SESMIM project
+category=QGIS Tools
+version=1.0.0
+qgisMinimumVersion=2.0
+
+author=Soft Master LLC
+email=softmaster.aagii@gmail.com
+
+icon=view/icons/application.png
+
+class_name=SESPlugin
