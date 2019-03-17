@@ -30,7 +30,7 @@ class Ui_SesmimFirstDialog(object):
         SesmimFirstDialog.setMaximumSize(QtCore.QSize(600, 600))
         SesmimFirstDialog.setBaseSize(QtCore.QSize(600, 600))
         self.groupBox = QtGui.QGroupBox(SesmimFirstDialog)
-        self.groupBox.setGeometry(QtCore.QRect(20, 10, 571, 161))
+        self.groupBox.setGeometry(QtCore.QRect(20, 40, 571, 161))
         self.groupBox.setObjectName(_fromUtf8("groupBox"))
         self.save_button = QtGui.QPushButton(self.groupBox)
         self.save_button.setGeometry(QtCore.QRect(400, 120, 75, 23))
@@ -69,7 +69,7 @@ class Ui_SesmimFirstDialog(object):
         self.refresh_button.setGeometry(QtCore.QRect(490, 120, 75, 23))
         self.refresh_button.setObjectName(_fromUtf8("refresh_button"))
         self.subject_twidget = QtGui.QTableWidget(SesmimFirstDialog)
-        self.subject_twidget.setGeometry(QtCore.QRect(20, 180, 571, 381))
+        self.subject_twidget.setGeometry(QtCore.QRect(20, 210, 571, 351))
         self.subject_twidget.setObjectName(_fromUtf8("subject_twidget"))
         self.subject_twidget.setColumnCount(6)
         self.subject_twidget.setRowCount(0)
@@ -88,6 +88,9 @@ class Ui_SesmimFirstDialog(object):
         self.close_button = QtGui.QPushButton(SesmimFirstDialog)
         self.close_button.setGeometry(QtCore.QRect(520, 570, 75, 23))
         self.close_button.setObjectName(_fromUtf8("close_button"))
+        self.connect_button = QtGui.QPushButton(SesmimFirstDialog)
+        self.connect_button.setGeometry(QtCore.QRect(20, 10, 75, 23))
+        self.connect_button.setObjectName(_fromUtf8("connect_button"))
 
         self.retranslateUi(SesmimFirstDialog)
         QtCore.QMetaObject.connectSlotsByName(SesmimFirstDialog)
@@ -115,5 +118,6 @@ class Ui_SesmimFirstDialog(object):
         item = self.subject_twidget.horizontalHeaderItem(5)
         item.setText(_translate("SesmimFirstDialog", "Comment", None))
         self.close_button.setText(_translate("SesmimFirstDialog", "Close", None))
+        self.connect_button.setText(_translate("SesmimFirstDialog", "Connect", None))
 
 import resources_rc

@@ -8,9 +8,9 @@ from Base import *
 
 class Parcel(Base):
 
-    __tablename__ = 'ca_parcel'
+    __tablename__ = 'parcel'
 
-    parcel_id = Column(String, primary_key=True)
+    parcel_id = Column(Integer, primary_key=True)
     area_m2 = Column(Float)
     address = Column(String)
     geometry = Column(Geometry('POLYGON', 4326))

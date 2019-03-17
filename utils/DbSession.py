@@ -4,9 +4,12 @@ from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy.exc import SQLAlchemyError
+from sqlalchemy.exc import DatabaseError, SQLAlchemyError
+from ..model.Singleton import Singleton
 
 class DbSession(QObject):
+
+    __metaclass__ = Singleton
 
     def __init__(self, parent=None):
 
@@ -21,7 +24,7 @@ class DbSession(QObject):
 
         return self.session
 
-    def create_session(self, user='sesmim_user', password='sesmim_user', host='localhost', port=5432, database='tr_sesmim'):
+    def create_session(self, user, password, host, port, database):
 
         if self.session is not None:
             self.session.close()
