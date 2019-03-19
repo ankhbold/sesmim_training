@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="83a063dc-ac7e-42ff-b8c4-2fac83908a8f" name="QGIS_SESMIM" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="C:\Users\B.Ankhbold\.qgis2\python\plugins" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

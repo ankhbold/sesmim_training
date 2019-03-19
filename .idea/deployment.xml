@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="QGIS_SESMIM">
+    <serverData>
+      <paths name="QGIS_SESMIM">
+        <serverdata>
+          <mappings>
+            <mapping deploy="sesmim_training" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
